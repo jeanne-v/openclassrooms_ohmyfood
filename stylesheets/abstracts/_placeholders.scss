@@ -1,0 +1,11 @@
+%basic-card {
+  border-radius: 15px;
+  overflow: hidden;
+  background-color: $sec-bg-color;
+
+  h3 {
+    font-size: 18px;
+    line-height: 21px;
+    margin: 0;
+  }
+}

@@ -1,0 +1,162 @@
+.location {
+  background-color: #eaeaea;
+  color: $sec-text-color;
+  padding: 15.5px;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  position: relative;
+
+  &__text {
+    margin: 0;
+
+    i {
+      margin-right: 17px;
+    }
+  }
+}
+
+.location,
+.intro-section {
+  text-align: center;
+}
+
+.intro-section {
+  padding: 39px 30px 57px;
+
+  &__heading {
+    margin: 0;
+
+    span {
+      display: block;
+    }
+  }
+
+  &__desc {
+    color: $sec-text-color;
+    font-size: 18px;
+    line-height: 21px;
+    margin: 12px 0 31px;
+  }
+}
+
+.intro-section,
+.restaurants-section {
+  background-color: $main-bg-color;
+}
+
+.how-to-section {
+  padding: 48px 0 68px;
+}
+
+.home {
+  h1,
+  h2 {
+    line-height: 28px;
+  }
+
+  h2 {
+    font-size: 24px;
+    margin: 0 20px;
+  }
+}
+
+.steps {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  padding: 0 20px 0 32px;
+  margin-top: 29px;
+}
+
+.step {
+  background-color: $main-bg-color;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  height: 72px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+
+  &__icon {
+    width: 16px;
+    margin-right: 20px;
+  }
+
+  &__desc {
+    margin: 0;
+  }
+
+  &__number {
+    color: #ffffff;
+    background-color: #9356dc;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+    margin-right: 12px;
+    transform: translateX(-50%);
+  }
+}
+
+.restaurants-section {
+  padding: 54px 0 66px;
+}
+
+.restaurants {
+  margin: 20px 17.5px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.restaurant-card {
+  @extend %basic-card;
+  text-decoration: none;
+  color: $main-text-color;
+  display: block;
+  position: relative;
+
+  &__tag {
+    background-color: $accent-bg-color;
+    color: $accent-text-color;
+    position: absolute;
+    font-size: 14px;
+    width: 80px;
+    height: 29px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 2px;
+    top: 13px;
+    right: 12px;
+  }
+
+  &__img {
+    object-fit: cover;
+    object-position: bottom;
+    height: 174px;
+    width: 100%;
+    display: block;
+
+    &--off-center {
+      object-position: 50% 60%;
+    }
+  }
+
+  &__main-content {
+    display: flex;
+    justify-content: space-between;
+    padding: 16px 25px 16px 13px;
+  }
+
+  &__location {
+    font-size: 17px;
+    line-height: 20px;
+    margin: 4px 0 0;
+  }
+
+  &__like {
+    height: 21px;
+  }
+}

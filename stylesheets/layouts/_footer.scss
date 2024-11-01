@@ -1,0 +1,27 @@
+.footer {
+  background-color: $dark-bg-color;
+  padding: 22px 25px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+
+  &__link {
+    color: #ffffff;
+    text-decoration: none;
+
+    i {
+      margin-right: 10px;
+    }
+
+    &--logo {
+      font-size: 18px;
+      line-height: 26px;
+    }
+  }
+
+  &__main-links {
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+  }
+}
