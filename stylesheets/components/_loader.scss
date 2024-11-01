@@ -1,0 +1,53 @@
+.loader {
+  background-color: $accent-bg-color;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  animation: fade-out 0.5s linear 2.25s forwards;
+}
+
+.first-circle,
+.second-circle {
+  animation: circle 1.5s linear;
+}
+
+.first-circle {
+  animation-delay: -0.75s;
+  animation-iteration-count: 3;
+}
+
+.second-circle {
+  animation-iteration-count: 2;
+}
+
+@keyframes circle {
+  0% {
+    r: 0;
+  }
+
+  50% {
+    opacity: 1;
+  }
+
+  100% {
+    r: 60;
+    opacity: 0;
+  }
+}
+
+@keyframes fade-out {
+  from {
+    opacity: 1;
+  }
+
+  to {
+    opacity: 0;
+    display: none;
+  }
+}
