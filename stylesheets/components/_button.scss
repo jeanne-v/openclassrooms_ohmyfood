@@ -5,15 +5,35 @@
   border-radius: 25px;
   background-image: linear-gradient(-4deg, #9356dc -11.44%, #ff79da 123.93%);
   color: #ffffff;
+  position: relative;
+  z-index: 1;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+  transition: box-shadow 0.5s ease-out;
 
   &:hover {
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.35);
+
+    &::after {
+      opacity: 1;
+    }
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    border-radius: 25px;
     background-image: linear-gradient(
         0deg,
         rgba(255, 255, 255, 0.15) 0%,
         rgba(255, 255, 255, 0.15) 100%
       ),
       linear-gradient(-4deg, #9356dc -5.2%, #ff79da 110.74%);
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.35);
+    opacity: 0;
+    transition: opacity 0.5s ease-out;
   }
 }
