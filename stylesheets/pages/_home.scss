@@ -1,9 +1,50 @@
+.home {
+  h1,
+  h2 {
+    line-height: 28px;
+  }
+
+  @media (min-width: 1024px) {
+    h1 {
+      font-size: 40px;
+      line-height: 47px;
+    }
+  }
+
+  h2 {
+    font-size: 24px;
+    margin: 0 20px;
+
+    @media (min-width: 768px) {
+      margin: 0px;
+    }
+  }
+
+  @media (min-width: 768px) {
+    section {
+      padding-left: 30px;
+      padding-right: 30px;
+    }
+  }
+
+  @media (min-width: 1024px) {
+    &__section-content {
+      max-width: 1080px;
+      margin: 0 auto;
+    }
+  }
+}
+
 .location {
   background-color: #eaeaea;
   color: $sec-text-color;
   padding: 15.5px;
   box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
   position: relative;
+
+  @media (min-width: 1024px) {
+    box-shadow: none;
+  }
 
   &__text {
     margin: 0;
@@ -22,11 +63,19 @@
 .intro-section {
   padding: 39px 30px 57px;
 
+  @media (min-width: 1024px) {
+    padding: 30px;
+  }
+
   &__heading {
     margin: 0;
 
     span {
       display: block;
+
+      @media (min-width: 400px) {
+        display: inline;
+      }
     }
   }
 
@@ -35,6 +84,10 @@
     font-size: 18px;
     line-height: 21px;
     margin: 12px 0 31px;
+
+    @media (min-width: 1024px) {
+      margin: 30.5px 0 30.5px;
+    }
   }
 }
 
@@ -45,17 +98,9 @@
 
 .how-to-section {
   padding: 48px 0 68px;
-}
 
-.home {
-  h1,
-  h2 {
-    line-height: 28px;
-  }
-
-  h2 {
-    font-size: 24px;
-    margin: 0 20px;
+  @media (min-width: 1024px) {
+    padding: 50px 0;
   }
 }
 
@@ -63,8 +108,18 @@
   display: flex;
   flex-direction: column;
   gap: 25px;
-  padding: 0 20px 0 32px;
+  padding: 0 20px;
   margin-top: 29px;
+
+  @media (min-width: 768px) {
+    padding: 0;
+  }
+
+  @media (min-width: 1024px) {
+    flex-direction: row;
+    margin-top: 28px;
+    gap: 24px;
+  }
 }
 
 .step {
@@ -74,6 +129,11 @@
   align-items: center;
   height: 72px;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+  margin-left: 12px;
+
+  @media (min-width: 1024px) {
+    flex-grow: 1;
+  }
 
   &__icon {
     width: 16px;
@@ -101,6 +161,10 @@
 
 .restaurants-section {
   padding: 54px 0 66px;
+
+  @media (min-width: 1024px) {
+    padding: 30px 0;
+  }
 }
 
 .restaurants {
@@ -108,6 +172,24 @@
   display: flex;
   flex-direction: column;
   gap: 18px;
+
+  @media (min-width: 650px) {
+    display: grid;
+    grid-template: auto auto / 1fr 1fr;
+  }
+
+  @media (min-width: 768px) and (max-width: 1023px) {
+    margin: 20px 0px 0px;
+  }
+
+  @media (min-width: 1024px) {
+    margin: 28px 0px 0px;
+    gap: 50px;
+  }
+
+  @media (min-width: 1300px) {
+    column-gap: 100px;
+  }
 }
 
 .restaurant-card {
@@ -138,6 +220,14 @@
     height: 174px;
     width: 100%;
     display: block;
+
+    @media (min-width: 500px) and (max-width: 650px) {
+      height: 231px;
+    }
+
+    @media (min-width: 1024px) {
+      object-position: 50% 60%;
+    }
 
     &--off-center {
       object-position: 50% 60%;

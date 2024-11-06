@@ -123,8 +123,19 @@ body {
   position: relative;
   z-index: 2;
 }
+@media (min-width: 1024px) {
+  .header {
+    height: 96px;
+    box-shadow: none;
+  }
+}
 .header__logo {
   width: 162px;
+}
+@media (min-width: 1024px) {
+  .header__logo {
+    width: 200px;
+  }
 }
 
 .footer {
@@ -133,6 +144,24 @@ body {
   display: flex;
   flex-direction: column;
   gap: 16px;
+}
+@media (min-width: 768px) {
+  .footer {
+    flex-direction: row-reverse;
+    align-items: center;
+  }
+}
+@media (min-width: 768px) and (max-width: 1023px) {
+  .footer {
+    gap: 37px;
+    padding: 22px 30px;
+  }
+}
+@media (min-width: 1024px) {
+  .footer {
+    gap: 74px;
+    padding: 58px 30px 30px;
+  }
 }
 .footer__link {
   color: #ffffff;
@@ -145,10 +174,57 @@ body {
   font-size: 18px;
   line-height: 26px;
 }
-.footer__main-links {
+.footer__main-links, .footer__links-group {
   display: flex;
   flex-direction: column;
   gap: 7px;
+}
+@media (min-width: 768px) {
+  .footer__main-links, .footer__links-group {
+    flex-direction: row;
+  }
+}
+@media (min-width: 768px) and (max-width: 1023px) {
+  .footer__main-links {
+    gap: 16px;
+  }
+}
+@media (min-width: 1024px) {
+  .footer__main-links {
+    gap: 37px;
+  }
+}
+
+.home h1,
+.home h2 {
+  line-height: 28px;
+}
+@media (min-width: 1024px) {
+  .home h1 {
+    font-size: 40px;
+    line-height: 47px;
+  }
+}
+.home h2 {
+  font-size: 24px;
+  margin: 0 20px;
+}
+@media (min-width: 768px) {
+  .home h2 {
+    margin: 0px;
+  }
+}
+@media (min-width: 768px) {
+  .home section {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+}
+@media (min-width: 1024px) {
+  .home__section-content {
+    max-width: 1080px;
+    margin: 0 auto;
+  }
 }
 
 .location {
@@ -157,6 +233,11 @@ body {
   padding: 15.5px;
   box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
   position: relative;
+}
+@media (min-width: 1024px) {
+  .location {
+    box-shadow: none;
+  }
 }
 .location__text {
   margin: 0;
@@ -173,17 +254,32 @@ body {
 .intro-section {
   padding: 39px 30px 57px;
 }
+@media (min-width: 1024px) {
+  .intro-section {
+    padding: 30px;
+  }
+}
 .intro-section__heading {
   margin: 0;
 }
 .intro-section__heading span {
   display: block;
 }
+@media (min-width: 400px) {
+  .intro-section__heading span {
+    display: inline;
+  }
+}
 .intro-section__desc {
   color: #353535;
   font-size: 18px;
   line-height: 21px;
   margin: 12px 0 31px;
+}
+@media (min-width: 1024px) {
+  .intro-section__desc {
+    margin: 30.5px 0 30.5px;
+  }
 }
 
 .intro-section,
@@ -194,22 +290,30 @@ body {
 .how-to-section {
   padding: 48px 0 68px;
 }
-
-.home h1,
-.home h2 {
-  line-height: 28px;
-}
-.home h2 {
-  font-size: 24px;
-  margin: 0 20px;
+@media (min-width: 1024px) {
+  .how-to-section {
+    padding: 50px 0;
+  }
 }
 
 .steps {
   display: flex;
   flex-direction: column;
   gap: 25px;
-  padding: 0 20px 0 32px;
+  padding: 0 20px;
   margin-top: 29px;
+}
+@media (min-width: 768px) {
+  .steps {
+    padding: 0;
+  }
+}
+@media (min-width: 1024px) {
+  .steps {
+    flex-direction: row;
+    margin-top: 28px;
+    gap: 24px;
+  }
 }
 
 .step {
@@ -219,6 +323,12 @@ body {
   align-items: center;
   height: 72px;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+  margin-left: 12px;
+}
+@media (min-width: 1024px) {
+  .step {
+    flex-grow: 1;
+  }
 }
 .step__icon {
   width: 16px;
@@ -244,12 +354,39 @@ body {
 .restaurants-section {
   padding: 54px 0 66px;
 }
+@media (min-width: 1024px) {
+  .restaurants-section {
+    padding: 30px 0;
+  }
+}
 
 .restaurants {
   margin: 20px 17.5px 0;
   display: flex;
   flex-direction: column;
   gap: 18px;
+}
+@media (min-width: 650px) {
+  .restaurants {
+    display: grid;
+    grid-template: auto auto/1fr 1fr;
+  }
+}
+@media (min-width: 768px) and (max-width: 1023px) {
+  .restaurants {
+    margin: 20px 0px 0px;
+  }
+}
+@media (min-width: 1024px) {
+  .restaurants {
+    margin: 28px 0px 0px;
+    gap: 50px;
+  }
+}
+@media (min-width: 1300px) {
+  .restaurants {
+    column-gap: 100px;
+  }
 }
 
 .restaurant-card {
@@ -278,6 +415,16 @@ body {
   height: 174px;
   width: 100%;
   display: block;
+}
+@media (min-width: 500px) and (max-width: 650px) {
+  .restaurant-card__img {
+    height: 231px;
+  }
+}
+@media (min-width: 1024px) {
+  .restaurant-card__img {
+    object-position: 50% 60%;
+  }
 }
 .restaurant-card__img--off-center {
   object-position: 50% 60%;
