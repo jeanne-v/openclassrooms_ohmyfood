@@ -9,6 +9,12 @@
   z-index: 1;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
   transition: box-shadow 0.5s ease-out;
+  border: none;
+  font-family: inherit;
+  font-weight: inherit;
+  font-size: inherit;
+  line-height: inherit;
+  cursor: pointer;
 
   &:hover {
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.35);

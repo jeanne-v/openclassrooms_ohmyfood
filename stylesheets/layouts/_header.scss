@@ -19,4 +19,11 @@
       width: 200px;
     }
   }
+
+  &__arrow-link {
+    position: absolute;
+    left: 23px;
+    top: 50%;
+    transform: translateY(-50%);
+  }
 }
