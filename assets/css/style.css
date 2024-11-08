@@ -78,7 +78,7 @@ body {
   cursor: pointer;
 }
 .heart::after {
-  content: url("/assets/images/heart-icon--filled.svg");
+  content: url("../images/heart-icon--filled.svg");
   position: absolute;
   top: 0;
   right: 0;
