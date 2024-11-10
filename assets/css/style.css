@@ -208,6 +208,9 @@ body {
   font-size: 18px;
   line-height: 26px;
 }
+.footer__link--sec {
+  font-weight: normal;
+}
 .footer__main-links, .footer__links-group {
   display: flex;
   flex-direction: column;
