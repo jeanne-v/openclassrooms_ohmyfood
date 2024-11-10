@@ -105,7 +105,7 @@
 
     animation: appear 0.25s both;
 
-    @for $i from 1 through 9 {
+    @for $i from 1 through 10 {
       &--#{$i} {
         animation-delay: 0.125s * ($i - 1);
       }

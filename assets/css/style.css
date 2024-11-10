@@ -608,6 +608,9 @@ body {
 .menu__item--9 {
   animation-delay: 1s;
 }
+.menu__item--10 {
+  animation-delay: 1.125s;
+}
 .menu__item-infos {
   padding: 13.5px 15px;
   display: flex;
