@@ -139,7 +139,6 @@ body {
   }
   to {
     opacity: 0;
-    display: none;
     z-index: -1;
   }
 }
@@ -584,7 +583,7 @@ body {
   box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
   position: relative;
   cursor: pointer;
-  animation: appear 0.25s both;
+  animation: appear 0.25s backwards;
 }
 .menu__item--1 {
   animation-delay: 0s;

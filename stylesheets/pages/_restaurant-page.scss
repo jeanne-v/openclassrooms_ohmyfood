@@ -104,7 +104,7 @@
     position: relative;
     cursor: pointer;
 
-    animation: appear 0.25s both;
+    animation: appear 0.25s backwards;
 
     @for $i from 1 through 10 {
       &--#{$i} {
