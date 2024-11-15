@@ -102,6 +102,7 @@
     @extend %basic-card;
     box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
     position: relative;
+    cursor: pointer;
 
     animation: appear 0.25s both;
 
@@ -147,14 +148,12 @@
     line-height: 18px;
   }
 
-  &__add-item {
-    border: none;
+  &__added-item {
     background-color: $accent-bg-color;
     padding: 25.5px 20px;
     position: absolute;
     right: 0;
     top: 0;
-    cursor: pointer;
     transform: translateX(100%);
   }
 
@@ -164,12 +163,12 @@
     display: block;
   }
 
-  &__add-item,
+  &__added-item,
   &__item-infos {
     transition: all 0.25s ease-out;
   }
 
-  &__item:hover &__add-item {
+  &__item:hover &__added-item {
     transform: translateX(0);
   }
 

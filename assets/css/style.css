@@ -583,6 +583,7 @@ body {
 .menu__item {
   box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
   position: relative;
+  cursor: pointer;
   animation: appear 0.25s both;
 }
 .menu__item--1 {
@@ -642,14 +643,12 @@ body {
   font-size: 15px;
   line-height: 18px;
 }
-.menu__add-item {
-  border: none;
+.menu__added-item {
   background-color: #99e2d0;
   padding: 25.5px 20px;
   position: absolute;
   right: 0;
   top: 0;
-  cursor: pointer;
   transform: translateX(100%);
 }
 .menu__check-icon {
@@ -657,10 +656,10 @@ body {
   width: 20px;
   display: block;
 }
-.menu__add-item, .menu__item-infos {
+.menu__added-item, .menu__item-infos {
   transition: all 0.25s ease-out;
 }
-.menu__item:hover .menu__add-item {
+.menu__item:hover .menu__added-item {
   transform: translateX(0);
 }
 .menu__item:hover .menu__item-infos {
